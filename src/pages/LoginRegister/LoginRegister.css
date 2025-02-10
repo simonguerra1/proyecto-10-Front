@@ -1,0 +1,54 @@
+#login > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#login > form > input {
+  background-color: #373737;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: medium;
+  line-height: 20px;
+  border: none;
+  height: 7svh;
+  min-width: 100%;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+}
+
+#login > form > input::placeholder {
+  color: white;
+}
+
+button[type='submit'] {
+  background-color: #ff4848;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: medium;
+  line-height: 20px;
+  border: none;
+  height: 7svh;
+  min-width: 100%;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+}
+button[type='submit']:hover {
+  background-color: #d63d3d;
+}
+
+button[type='submit']:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  button[type='submit'] {
+    width: 100%;
+  }
+}

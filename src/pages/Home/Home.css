@@ -1,0 +1,86 @@
+.evento {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  position: relative;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.evento > h3,
+p {
+  margin: 5px;
+}
+
+.evento > img {
+  width: 80%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.evento > .interesado {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.evento > .interesado:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .evento {
+    max-width: 90%;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .evento > img {
+    height: 180px;
+  }
+
+  .evento > .interesado {
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .evento {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .evento > img {
+    height: 160px;
+  }
+
+  .evento > .interesado {
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    right: 6px;
+  }
+}

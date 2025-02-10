@@ -1,0 +1,26 @@
+header {
+  background-color: #111; /* Fondo oscuro */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: background 0.3s ease-in-out;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}

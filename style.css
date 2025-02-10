@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+  font-family: 'Helvetica Neue', 'Roboto', Inter, system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ff4848;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 6%;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+main > * {
+  max-width: 90%;
+}
